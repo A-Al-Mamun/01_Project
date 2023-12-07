@@ -21,6 +21,25 @@ function displayTime(){
 }
 setInterval(displayTime,1000);
 
+
+// Clock middle interval test
+
+let id = setInterval(anim, 2000);
+let imgIndex = 0;
+let image = document.querySelectorAll('.image-item');
+console.log(image)
+
+function anim (){
+  if(imgIndex == image.length - 1)
+  {
+    clearInterval(id);
+  }else{
+    // imgIndex = imgIndex < image.length - 1 ? 0 : imgIndex++;
+    imgIndex++
+    image[imgIndex].style.transform = `translateX(-${imgIndex * 100}%)`;
+  }
+}
+
 // Clock Code End
 
 // Header Nav Menu

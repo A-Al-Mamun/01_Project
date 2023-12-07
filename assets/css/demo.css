@@ -236,13 +236,24 @@ main{
     z-index: -1;
 }
 
-main img{
+.image{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     z-index: 1;
     opacity: 60%;
+    display: flex;
+    overflow: hidden;
 }
+.image img{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+/* .image img.active{
+    transform: translateX(0%);
+} */
 
 /* Main Section End */
 
