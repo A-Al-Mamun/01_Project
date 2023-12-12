@@ -34,7 +34,7 @@ function anim (){
   {
     clearInterval(id);
   }else{
-    // imgIndex = imgIndex < image.length - 1 ? 0 : imgIndex++;
+    // imgIndex = (imgIndex < image.length - 1) ? 0 : imgIndex++;
     imgIndex++
     image[imgIndex].style.transform = `translateX(-${imgIndex * 100}%)`;
   }
