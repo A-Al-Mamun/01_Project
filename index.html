@@ -2,129 +2,379 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Abdullah Al Mamun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>All Project | Protfolio | Clone | Management</title>
 
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    
+    
+    <title>Main Portfolio | Create with HTML, CSS, JavaScript</title>
+
+    <!-- Font Awesome v6 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!-- Google Fonts Link Roboto | poppins | Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Custom CSS Links -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
-    
 </head>
+
 <body>
-    <section class="header">
-        <div class="header-top container">
-            <div class="project-count">
-                <button onclick="ask()">Ask for count of Project</button>
-                <span id="show"></span>
-            </div>
-            <div class="time">
-                <div id="hour">00</div>
-                <div id="minute">:00:</div>
-                <div id="second">00</div>
-            </div>
+    <div class="bg-clock">
+        <div class="clock">
+            <div id="hour" class="hand" style="--o: 100%"><i class="hour-i"></i></div>
+            <div id="min" class="hand" style="--o: 80%"><i class="min-i"></i></div>
+            <div id="sec" class="hand" style="--o: 20%"><i class="sec-i"></i></div>
+    
+            <span style="--i:1"><b>I</b></span>
+            <span style="--i:2"><b>II</b></span>
+            <span style="--i:3"><b>III</b></span>
+            <span style="--i:4"><b>IV</b></span>
+            <span style="--i:5"><b>V</b></span>
+            <span style="--i:6"><b>VI</b></span>
+            <span style="--i:7"><b>VII</b></span>
+            <span style="--i:8"><b>VIII</b></span>
+            <span style="--i:9"><b>IX</b></span>
+            <span style="--i:10"><b>X</b></span>
+            <span style="--i:11"><b>XI</b></span>
+            <span style="--i:12"><b>XII</b></span>
         </div>
-        
-        <div class="section-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#hospita">Hospital</a></li>
-                <li><a href="#logIn">LogIn</a></li>
-                <li><a href="#clock">Clock Design</a></li>
-            </ul>
+    </div>
+    <!-- Header Section Start -->
+    
+    <section class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#"><img src="./assets/img/logo.svg" alt=""></a>
+            </div>
+            <div class="menu1">
+                <nav>
+                    <a href="#" class="about-menu">About</a>
+                    <a href="#" class="portfolio-menu">Portfolio</a>
+                    <a href="#" class="git-menu">Git Doc</a>
+                    <a href="#" class="contact-menu">Contact</a>
+                    <a href="./assets/pdf/ABDULLAH_AL_MAMUN_FEDev.pdf" target="_blank" class="cv">CV</a>
+                </nav>
+            </div>
+            <div class="menu2">
+                <i class="fa-solid fa-bars navOpen"></i>
+                <i class="fa-solid fa-xmark navClose"></i>
+                <nav id="navMenu">
+                    <a class="navLogo" href="#"><img src="./assets/img/logo.jpg" alt=""></a>
+                    <a href="#" class="about-menu">About</a>
+                    <a href="#" class="portfolio-menu">Portfolio</a>
+                    <a href="#" class="git-menu">Git Doc</a>
+                    <a href="#" class="contact-menu">Contact</a>
+                    <hr>
+                    <a href="#"></a>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <input type="search" name="" placeholder="Search"><i class="fa-solid fa-search"></i>
+            </div>
+
         </div>
     </section>
-    <hr>
+
+    <section class="social-icon">
+        <div class="open-close"></div>
+        <div class="social-item">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </section>
+    
+    <!-- Header Section End -->
+
+    <!--  -->
+
+    <!-- Main Section Start -->
     <main>
-        <!-- Hospital Design Section Start -->
-        <div id="hospital" class="main-items">
-            <h1>Hospital</h1>
-            <div class="main-items-inner">
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/03_Hospital/index.html">
-                        <img src="./assets/img/H.PNG" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/03_Hospital/index.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/03_Hospital/index.html">
-                        <img src="./assets/img/H.PNG" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/03_Hospital/index.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/03_Hospital/index.html">
-                        <img src="./assets/img/H.PNG" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/03_Hospital/index.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-
-                
-            </div>
-
-            
+        <div class="image">
+            <img class="image-item active" src="./assets/img/Profile1.png" alt="">
+            <img class="image-item" src="./assets/img/Clock.PNG" alt="">
+            <img class="image-item" src="./assets/img/H.PNG" alt="">
+            <img class="image-item" src="./assets/img/Profile1.png" alt="">
         </div>
-        <!-- Hospital Design Section End -->
-
-        <!-- LogIn Section Start -->
-        <div id="logIn" class="main-items">
-            <h1>LogIn Page</h1>
-            <div class="main-items-inner">
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/01_Log_In_Pages/01_login_index.html">
-                        <img src="./assets/img/logIn.PNG" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/01_Log_In_Pages/01_login_index.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-            </div>
-
-            
-        </div>
-        <!-- LogIn Section End -->
-
-        <!-- Clock Section Start -->
-        <div id="clock" class="main-items">
-            <h1>Clock Design Page</h1>
-            <div class="main-items-inner">
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/06_Analog_Clock_Design/index.html">
-                        <img src="./assets/img/Clock.PNG" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/06_Analog_Clock_Design/index.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-
-
-                <div class="main-item">
-                    <a href="./01_HTML_CSS_JS/06_Analog_Clock_Design/index1.html">
-                        <img src="./assets/img/Clock1.png" alt="">
-                    </a>
-                    <form action="#">
-                        <a href="./01_HTML_CSS_JS/06_Analog_Clock_Design/index1.html">Show <i class="fa-solid fa-eye"></i></a>
-                        <button onclick="des()">Sort Description</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-
     </main>
+    <!-- Main Section End -->
 
+    <!-- About Section Start  -->
+    <section class="about">
+        <i class="fa-solid fa-xmark-circle close-about"></i>
+        <h1>About Me</h1>
+        <div class="about-inner">
+            <div class="about-img">
+                <img src="./assets/img/Profile1.png" alt="">
+            </div>
+            <div class="about-content">
+                <h2>Assalamu Alaikum</h2>
+                <h1>I'm Abdullah Al Mamun</h1>
+                <span>Front End Web Developer</span>
+                <p>I'm regular leraner student in front end development. I have 3 years<sup>+</sup> of experience in this field. I already have practice and exercise with some project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start  -->
+    <section class="portfolio">
+        <i class="fa-solid fa-xmark-circle close-portfolio"></i>
+        <h1 id="port-title">Portfolio</h1>
+        <div class="up-btn"><a href="#port-title"><i class="fa-solid fa-arrow-alt-circle-up"></i></a></div>
+        <div class="portfolio-inner">
+            <div class="port-item">
+                <div class="image"><img src="./assets/img/Human-Body.png" alt=""></div>
+                <div class="content">
+                    <h2>Human Body Info</h2>
+                    <p>In this page I just try to add little bit add Javascript functional work for Human Body info. It will be updated most of the time...</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./02_JavaScript_2022/Human_Body_Functionality/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/Clock1.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Digital Clock</h2>
+                    <p>In this page have just a digital clock design and some functionality of js.</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Clock/06_Analog_Clock_Design/index1.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/logIn.PNG" alt="">
+                </div>
+                <div class="content">
+                    <h2>Log In Page</h2>
+                    <p> Just a login page design</p></div>
+                <div class="item-btn">
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span></span>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/01_Log_In_Pages/01_login_index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/eCommerce.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>eCommerce</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/eCommerce/01_eCommerce/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/portfolio02.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Portfolio</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Portfolio/02_Portfolio/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/Amazon-Clone.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Amazon Clone</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Clone/AmazonClone/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/FB_LoginPage.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Facebook Login Page Clone</h2>
+                    <p>Facebook Login Page Clone it is.</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Clone/LoginFBClone/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/01_Studio.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>01 Studio</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Studio/01_Studio/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/Accordion.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Accordion Design</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./02_JavaScript_2022/AccordionWithJavaScript/accordion.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+            <div class="port-item">
+                <div class="image">
+                    <img src="./assets/img/01Hospital.png" alt="">
+                </div>
+                <div class="content">
+                    <h2>Hospital</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, a?</p></div>
+                <div class="item-btn">
+                    <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button><a href="./01_HTML_CSS_JS/Hospital/03_Hospital/index.html" target="_blank">Demo</a></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio Section End -->
+
+    <!-- Git Section Start  -->
+    <section class="git">
+        <i class="fa-solid fa-xmark-circle close-git"></i>
+        <h1>Git Documentation</h1>
+        <div class="git-inner">
+            <div class="git-info">
+                <p><span>Git</span> - This is a software/Tool, used for change control or version control.</p><br>
+                <p><span>Github</span> - This one is a online service, used as host git repository/folder/source code.</p>
+            </div>
+            <hr>
+            <div class="git-install">
+                <h2>Installation</h2>
+                <ul>
+                    <li>Download and install git on your pc: <a href="https://git-scm.com" target="_blank">https://git-scm.com</a></li>
+                    <li>Then open command Line
+                        <ol>
+                            <li>git --version</li>
+                            <li>git config --global user.name "user name"</li>
+                            <li>git config --global user.email "email"</li>
+                            <li>git config --list</li>
+                            <li>git config --global user.name "raju"   // (we can change name)</li>
+                            <li>git config --global user.email "raju@gmail.com"   //  (we can change email)</li>
+                            <li>git config user.name</li>
+                            <li>git config user.email</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Git Section End -->
+    
+
+    <!-- Contact Section Start  -->
+    <section class="contact">
+        <i class="fa-solid fa-xmark-circle close-contact"></i>
+        <h1>Contact Me</h1>
+        <div class="contact-inner">
+            <form action="#">
+                <input type="text" name="" id="" placeholder="Enter Name">
+                <input type="email" name="" id="" placeholder="Enter Email">
+                <input type="number" name="" id="" placeholder="Enter Number">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4468.213616946663!2d90.36047716798973!3d23.80644667257002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c127f700d01b%3A0x46d3540dfa2672a7!2sMirpur-2%20Bus%20Stand!5e0!3m2!1sen!2sbd!4v1701015254457!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
 
     <script src="./assets/js/main.js"></script>
 </body>
