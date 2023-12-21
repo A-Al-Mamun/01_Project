@@ -419,7 +419,7 @@ main{
     padding: 10px 0;
 }
 .port-item .item-btn div i{
-    color: #fff;  
+    color: yellow;  
 }
 .port-item .item-btn button{
     padding: 10px 20px;
@@ -542,22 +542,29 @@ main{
     margin: 0 auto;
 }
 .contact-inner form input{
-    width: 500px;
+    width: 100%;
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    border: 0;
+    outline: none;
 }
 .contact-inner form textarea{
     padding: 5px;
     font-size: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
+    border: 0;
+    outline: none;
 }
 .contact-inner form button{
     width: 100px;
-    padding: 5px;
+    padding: 10px 20px;
     font-size: 20px;
+    color: var(--textColor);
+    background-color: rebeccapurple;
+    border: 0;
     border-radius: 5px;
 }
 
@@ -569,6 +576,8 @@ main{
     height: 410px;
     margin-top: -50px;
     border-radius: 20px;
+    border: 0;
+    border-radius: 5px;
 }
 /* Contact Section End */
 
