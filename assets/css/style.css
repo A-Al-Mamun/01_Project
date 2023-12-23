@@ -126,7 +126,9 @@ body{
 .header-inner .logo{
     flex-basis: 10%;
 }
-.header-inner .logo a{}
+.header-inner .logo a{
+    cursor: pointer;
+}
 .header-inner .logo a img{
     max-width: 50px;
     height: auto;
@@ -160,18 +162,44 @@ body{
     flex-basis: 20%;
     display: flex;
     align-items: center;
+    position: relative;
 }
-.search-bar input{
+.search-bar .search{
     outline: none;
     font-size: 18px;
     color: var(--textColor);
-    padding: 2px;
+    padding: 5px 10px;
     background-color: #7070703f;
     border: 0;
     border-radius: 20px;
+    margin-right: 5px;
+}
+.search-bar::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 26%;
+    height: 60%;
+    cursor: pointer;
+    background: #434448;
+    border-left: 2px solid red;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60%{
+        left: 27%;
+    }
+    100%{
+        left: 2%;
+    }
 }
 .search-bar i{
+    position: absolute;
+    top: 7px;
+    right: 13px;
     color: var(--textColor);
+    cursor: pointer;
 }
 
 .social-icon{
