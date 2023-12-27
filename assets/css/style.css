@@ -296,21 +296,30 @@ main{
     display: flex;
     justify-content: center;
     z-index: 999;
+    overflow: hidden;
     display: none;
 }
-.about .close-about{
+.about>.close-about{
     position: absolute;
     top: 30px;
     right: 30px;
     font-size: 30px;
+    cursor: pointer;
     color: var(--textColor);
 }
 .about h1{
+    display: inline-block;
+    margin: 100px auto 0;
+    width: 100%;
     font-size: 40px;
     text-align: center;
     color: var(--textColor);
     text-transform: uppercase;
-    padding-top: 100px;
+    transform: scale(0.9);
+    transition: transform 0.7s ease-in-out;
+}
+.about:hover h1{
+    transform: scale(1.2);
 }
 
 .about-inner{
@@ -323,17 +332,28 @@ main{
 }
 .about-img{
     flex-basis: 40%;
+    transform: scale(0.9) skewX(5deg);
+    transition: transform 0.7s ease-in-out;
 }
-.about-img img{}
+.about:hover .about-img{
+    transform: scale(1) skewX(0deg);
+}
+
 .about-content{
     flex-basis: 50%;
+    transform: scale(0.9) skewX(-5deg);
+    transition: transform 0.7s ease-in-out;
+}
+.about:hover .about-content{
+    transform: scale(1) skewX(0deg);
 }
 .about-content h2,h1,p{
     color: var(--textColor);
     text-align: left;
 }
 .about-content h1{
-    padding: 0;
+    margin: 0;
+    transform: none!important;
     text-align: left;
 }
 .about-content span{
@@ -571,18 +591,21 @@ main{
 }
 .contact-inner form input{
     width: 100%;
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgb(128, 0, 128);
+    color: #fff!important;
+    font-size: 25px;
+    border-radius: 20px;
     margin-bottom: 10px;
     border: 0;
     outline: none;
 }
 .contact-inner form textarea{
     padding: 5px;
-    font-size: 20px;
-    border-radius: 5px;
+    font-size: 25px;
+    border-radius: 20px;
     margin-bottom: 10px;
+    background: rgb(128, 0, 128);
     border: 0;
     outline: none;
 }
@@ -593,7 +616,7 @@ main{
     color: var(--textColor);
     background-color: rebeccapurple;
     border: 0;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .map{
