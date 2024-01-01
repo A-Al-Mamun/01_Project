@@ -407,6 +407,39 @@ main{
     padding-top: 100px;
 }
 
+.port-nav{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+.port-nav ul{}
+.port-nav ul li{
+    display: inline-block;
+}
+#port-Navbar.active{
+    color: red;
+}
+.port-nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 0 20px;
+    position: relative;
+}
+.port-nav ul li a::after{
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.4s ease-in-out;
+}
+.port-nav ul li a:hover::after{
+    width: 80%;
+}
+
 .up-btn{
     width: 30px;
     height: 30px;
@@ -445,7 +478,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 0;
 }
 
 .port-item{
@@ -457,7 +489,7 @@ main{
 }
 .port-item .image{
     width: 100%;
-    height: 280px;
+    height: 180px;
     background: #ffdfff50;
     border-radius: 5px 5px 0 0;
 }

@@ -109,6 +109,18 @@ portfolioMenu.forEach(item => {
 })
 
 
+// Portfolio Navbar
+const portNavbar = document.getElementById('port-Navbar');
+const portNavbarItems = document.querySelectorAll('#port-Navbar li');
+
+portNavbarItems.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.add('active');
+  })
+})
+
+
+
 let star = document.querySelectorAll('.star i');
 // console.log(star);
 star.forEach(item => {
