@@ -416,9 +416,7 @@ main{
 .port-nav ul li{
     display: inline-block;
 }
-#port-Navbar.active{
-    color: red;
-}
+
 .port-nav ul li a{
     display: inline-block;
     text-decoration: none;
@@ -471,6 +469,7 @@ main{
 
 
 
+
 .portfolio-inner{
     width: 80%;
     margin: 0 auto;
@@ -479,6 +478,11 @@ main{
     align-items: center;
     flex-wrap: wrap;
 }
+
+#all{}
+#Port{
+    display: none;
+} 
 
 .port-item{
     width: 300px;

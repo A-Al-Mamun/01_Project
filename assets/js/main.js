@@ -110,14 +110,16 @@ portfolioMenu.forEach(item => {
 
 
 // Portfolio Navbar
-const portNavbar = document.getElementById('port-Navbar');
-const portNavbarItems = document.querySelectorAll('#port-Navbar li');
 
-portNavbarItems.forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.add('active');
-  })
+const menuAll = document.querySelector('#all');
+const menuPort = document.querySelector('#Port');
+
+menuPort.addEventListener('click', () => {
+  console.log("Work")
+  //  menuAll.style.display= 'none';
+  //  menuPort.style.display= 'flex';
 })
+
 
 
 
