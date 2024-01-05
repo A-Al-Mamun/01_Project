@@ -111,13 +111,61 @@ portfolioMenu.forEach(item => {
 
 // Portfolio Navbar
 
+let portNavAll = document.getElementsByClassName('port-nav-item')[0];
+let portNavPort = document.getElementsByClassName('port-nav-item')[1];
+let portNavClock = document.getElementsByClassName('port-nav-item')[2];
+let portNavEcom = document.getElementsByClassName('port-nav-item')[3];
+let portNavHospital = document.getElementsByClassName('port-nav-item')[4];
+
 const menuAll = document.querySelector('#all');
 const menuPort = document.querySelector('#Port');
+const menuClock = document.querySelector('#Clock');
+const menuEcom = document.querySelector('#Ecom');
+const menuHospital = document.querySelector('#Hospital');
 
-menuPort.addEventListener('click', () => {
-  console.log("Work")
-  //  menuAll.style.display= 'none';
-  //  menuPort.style.display= 'flex';
+portNavAll.addEventListener('click', () => {
+  menuAll.style.display = "flex";
+  menuAll.style.display = "justify-content(space-between)";
+  menuPort.style.display = "none";
+  menuClock.style.display = "none";
+  menuEcom.style.display = "none";
+  menuHospital.style.display = "none";
+})
+
+portNavPort.addEventListener('click', () => {
+  menuPort.style.display = "flex";
+  menuPort.style.display = "justify-content(space-between)";
+  menuAll.style.display = "none";
+  menuClock.style.display = "none";
+  menuEcom.style.display = "none";
+  menuHospital.style.display = "none";
+})
+
+portNavClock.addEventListener('click', () => {
+  menuClock.style.display = "flex";
+  menuClock.style.display = "justify-content(space-between)";
+  menuPort.style.display = "none";
+  menuAll.style.display = "none";
+  menuEcom.style.display = "none";
+  menuHospital.style.display = "none";
+})
+
+portNavEcom.addEventListener('click', () => {
+  menuEcom.style.display = "flex";
+  menuEcom.style.display = "justify-content(space-between)";
+  menuClock.style.display = "none";
+  menuPort.style.display = "none";
+  menuAll.style.display = "none";
+  menuHospital.style.display = "none";
+})
+
+portNavHospital.addEventListener('click', () => {
+  menuHospital.style.display = "flex";
+  menuHospital.style.display = "justify-content(space-between)";
+  menuClock.style.display = "none";
+  menuPort.style.display = "none";
+  menuAll.style.display = "none";
+  menuEcom.style.display = "none";
 })
 
 
