@@ -438,6 +438,16 @@ main{
     width: 80%;
 }
 
+#all{}
+
+#Port,
+#Clock,
+#Ecom,
+#Hospital{
+    display: none;
+}
+
+
 .up-btn{
     width: 30px;
     height: 30px;
