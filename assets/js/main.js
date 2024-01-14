@@ -1,3 +1,28 @@
+// Greading 
+const gread = new Date().getHours();
+let text = "";
+switch(gread){
+  case 6: case 7: case 8: case 9: case 10: case 11:
+    text = "Morning";
+    break;
+  case 12: case 13: case 14: 
+  case 15:
+    text = "Noon";
+    break;
+  case 16: 
+  case 17:
+    text = "Afternoon";
+    break;
+  case 18: case 19: case 20: case 21:
+  case 22: 
+  case 23:
+    text = "Evening";
+    break;
+  default:
+    text = "Sleeep Time, So don't sleep waste right time";
+}
+document.getElementById('greading').innerHTML = text;
+
 
 // Clock Code Start
 let h = document.getElementById('hour');
